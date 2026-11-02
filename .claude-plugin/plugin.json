@@ -1,0 +1,12 @@
+{
+  "name": "kid-compass",
+  "version": "1.0.0",
+  "description": "Helps parents find the right competitions, programmes, camps, workshops and events for their child, with deadlines, growth paths, worth-it checks and calendar reminders. India-first, works anywhere.",
+  "author": {
+    "name": "Shashank Hegde, BrainyDarts Technologies"
+  },
+  "homepage": "https://github.com/brainydarts/kid-compass",
+  "repository": "https://github.com/brainydarts/kid-compass",
+  "license": "MIT",
+  "keywords": ["parents", "kids", "education", "competitions", "olympiad", "india", "cbse"]
+}

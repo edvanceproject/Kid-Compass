@@ -1,0 +1,29 @@
+name: Validate registry
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Validate registry files
+        run: python skills/kid-compass/scripts/validate_registry.py
+      - name: Check installer
+        run: |
+          bash -n install.sh
+          HOME=$(mktemp -d) bash install.sh
+          HOME=$(mktemp -d) bash install.sh --agent codex --uninstall
+      - name: Smoke-test scripts
+        run: |
+          cd skills/kid-compass
+          python scripts/find_matches.py --interests science --class 7 > /dev/null
+          python scripts/upcoming.py --days 365 > /dev/null
+          python scripts/make_ics.py --ids inspire-manak --out /tmp/test.ics

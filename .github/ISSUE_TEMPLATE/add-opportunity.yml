@@ -1,0 +1,45 @@
+name: Add an opportunity
+description: Suggest a competition, programme or venue for the registry
+title: "[Add] "
+labels: ["registry", "good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping other parents. Please share only what you can point to on an official page.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is it?
+      options:
+        - National or state programme / competition / olympiad / award
+        - City venue that regularly runs children's programmes
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official link
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What you know
+      description: Who it's for (class/age), what children do, cost, how to apply (school or parent), usual months, city.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: The main value is the experience, not a certificate or medal everyone receives
+          required: true
+        - label: I have no paid or referral relationship with the organiser (or I've described it above)
+          required: true

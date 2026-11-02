@@ -1,0 +1,38 @@
+id: ncsc
+name: National Children's Science Congress (NCSC)
+organiser: NCSTC, Department of Science & Technology (DST), Government of India; district and state rounds run by state science & technology councils
+interests: [science, environment, innovation, social-impact]
+format: A team of two runs a small local research project on the year's theme and presents it at district, state and national level
+level_path: [district, state, national]
+eligibility:
+  class_min: null
+  class_max: null
+  age_min: 10
+  age_max: 17
+  age_as_of: 31 December of the competition year
+  boards: all — school students, school drop-outs and informal learners are eligible
+  team: team
+  details: "Junior group 10–14, senior group above 14 up to 17; team of 2 students plus a guide teacher. 2026-27 theme: Science and Innovation for Sustainability"
+apply_via: school
+cost_inr: 0
+reward: Presentation at district, state and national congresses
+window:
+  opens_month: 7
+  closes_month: 8
+  last_seen_open: null
+  last_seen_close: null
+  event_months: District ~Nov, state ~Dec, national later
+  cycle: annual
+credibility: official
+official_url: https://n-csc.in/
+source_urls:
+  - https://kscst.org.in/n-csc_files/32_n-csc_2026_27/n-csc_2026.html
+  - https://kscst.org.in/n-csc_files/32_n-csc_2026_27/n-csc_2026_27_Information.pdf
+  - https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2281
+  - https://gujcost.gujarat.gov.in/Home/NCSCongress
+  - https://thecsrjournal.in/young-scientists-invited-present-solutions-national-children-science-congress-2026/
+last_verified: 2026-11-01
+notes: >-
+  Each state sets its own registration deadline (Gujarat closed 15 Aug 2026), so check your state council's page
+  (Karnataka: KSCST). Teams register through the district link on n-csc.in with a guide teacher, usually via the school.
+  The free entry is stated in a Gujarat report; national venue and dates for 2026-27 were not yet published.

@@ -1,0 +1,35 @@
+id: ioqm
+name: Indian Olympiad Qualifier in Mathematics (IOQM)
+organiser: Mathematics Teachers' Association (India); later stages run by HBCSE-TIFR
+interests: [maths]
+format: Written maths olympiad qualifier at a registered centre; top scorers go on to the proof-based RMO and INMO
+level_path: [national, international]
+eligibility:
+  class_min: 8
+  class_max: 12
+  age_min: null
+  age_max: null
+  age_as_of: null
+  boards: all — including home-schooled and open-school students; must be eligible for an Indian passport and studying in India
+  team: individual
+  details: "Birth-date rule applies (2026 cycle: born 1 Aug 2007 – 31 Jul 2014)"
+apply_via: school
+cost_inr: 300
+reward: IOQM → RMO → INMO → IMO Training Camp → Indian team at the International Mathematical Olympiad
+window:
+  opens_month: 6
+  closes_month: 7
+  last_seen_open: 2026-06-29
+  last_seen_close: 2026-07-25
+  event_months: IOQM Sep; RMO Nov; INMO Jan
+  cycle: annual
+credibility: official
+official_url: https://ioqm.mtai.org.in/
+source_urls:
+  - https://ioqm.mtai.org.in/
+  - https://olympiads.hbcse.tifr.res.in/mathematical-olympiad-2026-2027/
+  - https://olympiads.hbcse.tifr.res.in/wp-content/uploads/2026/10/elcrIOQM-2026-1.pdf
+last_verified: 2026-11-01
+notes: >-
+  Register through a school centre or individually online (₹180 for KV/JNV students). The 2026 site listed several
+  deadlines (25 Jul individual, 29 Jul centre, 8 Aug online) — confirm the current year's dates early in June.

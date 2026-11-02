@@ -1,0 +1,35 @@
+name: Release
+
+# Push a tag like v1.0.0 to publish a GitHub release with ready-to-install files:
+#   kid-compass.skill  – upload in the Claude apps (or unzip into any agent's skills folder)
+#   kid-compass.zip    – the same skill folder as a plain zip
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Validate registry
+        run: python skills/kid-compass/scripts/validate_registry.py
+      - name: Build skill packages
+        run: |
+          cd skills
+          find kid-compass -name "__pycache__" -prune -exec rm -rf {} +
+          zip -r ../kid-compass.skill kid-compass
+          cp ../kid-compass.skill ../kid-compass.zip
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            kid-compass.skill
+            kid-compass.zip
+          generate_release_notes: true

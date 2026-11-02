@@ -1,0 +1,36 @@
+id: isro-yuvika
+name: ISRO YUVIKA – Young Scientist Programme (Yuva Vigyani Karyakram)
+organiser: Indian Space Research Organisation (ISRO)
+interests: [space, science, engineering]
+format: Free two-week residential camp at an ISRO centre with lectures, lab and facility visits, and hands-on space activities
+level_path: [national]
+eligibility:
+  class_min: 9
+  class_max: 9
+  age_min: null
+  age_max: null
+  age_as_of: null
+  boards: all — school students in India
+  team: individual
+  details: Apply while in Class 9; the camp runs in the summer after Class 9
+apply_via: self
+cost_inr: 0
+reward: Two weeks at an ISRO centre; ISRO covers boarding, lodging and course material and reimburses train fare
+window:
+  opens_month: 2
+  closes_month: 3
+  last_seen_open: 2026-02-27
+  last_seen_close: 2026-03-31
+  last_seen_close_source: secondary   # from news reports; official page didn't state it
+  event_months: May
+  cycle: annual
+credibility: official
+official_url: https://www.isro.gov.in/Young_Scientist_YUVIKA2026.html
+source_urls:
+  - https://www.isro.gov.in/Young_Scientist_YUVIKA2026.html
+  - https://www.isro.gov.in/(Yuvika%20)%20-%20Online%20Registration.html
+  - https://www.dinamalar.com/news/kalvimalar-news-en/isro-invites-applications-for-yuvika-young-scientist-programme/58963
+last_verified: 2026-11-01
+notes: >-
+  Highly selective (2026: about 1.07 lakh registrations, 456 selected). Selection uses Class 8 marks, an online quiz,
+  extracurriculars and a rural-school weightage. The 2026 window comes from news reports; ISRO's own page didn't state it.

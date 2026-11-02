@@ -1,0 +1,36 @@
+id: nsejs
+name: National Standard Examination in Junior Science (NSEJS)
+organiser: Indian Association of Physics Teachers (IAPT); later stages run by HBCSE-TIFR
+interests: [science]
+format: 2-hour written exam in physics, chemistry and biology (up to Class 10 level) at a registered centre, usually the school
+level_path: [national, international]
+eligibility:
+  class_min: 8
+  class_max: 10
+  age_min: null
+  age_max: null
+  age_as_of: null
+  boards: all — must be eligible for an Indian passport and studying in India
+  team: individual
+  details: "Birth-date window is the binding rule (2026 cycle: born 1 Jan 2012 – 31 Dec 2013); must not finish Class 10 board exams before 30 Nov"
+apply_via: school
+cost_inr: 300
+reward: Stage 1 of the junior science olympiad — NSEJS → INJSO → selection camp at HBCSE → Indian team at IJSO
+window:
+  opens_month: 8
+  closes_month: 9
+  last_seen_open: 2026-08-21
+  last_seen_close: 2026-09-16
+  event_months: Exam Nov; INJSO Feb
+  cycle: annual
+credibility: official
+official_url: https://www.iapt.org.in/
+source_urls:
+  - https://www.iapt.org.in/
+  - https://iapt.org.in/wp-content/uploads/NSE-2026-Student-Brochure.pdf
+  - https://olympiads.hbcse.tifr.res.in/science-olympiad-2026-2027/
+  - https://olympiads.hbcse.tifr.res.in/eligibility-of-science-olympiad/
+last_verified: 2026-11-01
+notes: >-
+  Students enrol through a registered centre (usually their school; online enrolment also exists) and pay ₹300 there.
+  2026 exam: Sun 22 Nov 2026. Check the birth-date rule each year — the class wording alone can mislead.

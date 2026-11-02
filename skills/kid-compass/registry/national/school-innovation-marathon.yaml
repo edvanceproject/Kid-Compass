@@ -1,0 +1,37 @@
+id: school-innovation-marathon
+name: School Innovation Marathon (formerly ATL Marathon; 2025 edition run as Viksit Bharat Buildathon)
+organiser: Atal Innovation Mission (AIM), NITI Aayog, with the Ministry of Education Innovation Cell and AICTE
+interests: [innovation, engineering, entrepreneurship, social-impact]
+format: A school team spots a community problem and submits an idea or prototype online; winners are picked at district, state and national level
+level_path: [school, district, state, national]
+eligibility:
+  class_min: 6
+  class_max: 12
+  age_min: null
+  age_max: null
+  age_as_of: null
+  boards: all — any school in India; an Atal Tinkering Lab is not required
+  team: team
+  details: Team of 3–5 in the 2025 Buildathon (sources conflict for other editions)
+apply_via: school
+cost_inr: null
+reward: "2025 Buildathon: ₹1 crore award pool across 10 national, 100 state and 1,000 district winners"
+window:
+  opens_month: 9
+  closes_month: 10
+  last_seen_open: 2025-09-23
+  last_seen_close: 2025-10-11
+  event_months: null
+  cycle: annual
+credibility: official
+official_url: https://aim.gov.in/
+source_urls:
+  - https://aim.gov.in/
+  - https://www.pib.gov.in/FactsheetDetails.aspx?Id=150345
+  - https://schoolinnovationmarathon.org/lp/
+  - https://aim.gov.in/pdf/ATL-Calendar-2026.pdf
+last_verified: 2026-11-01
+notes: >-
+  The name and format change almost every year (ATL Marathon to 2023-24, School Innovation Marathon 2024-25,
+  Viksit Bharat Buildathon 2025). AIM's 2026 calendar mentions a School Innovation Marathon in July 2026, but no
+  2026-27 registration had been announced when checked — treat the window as uncertain. No fee is mentioned.

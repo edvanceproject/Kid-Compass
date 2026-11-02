@@ -1,0 +1,14 @@
+{
+  "name": "brainydarts",
+  "description": "Open-source skills from BrainyDarts Technologies",
+  "owner": {
+    "name": "BrainyDarts Technologies"
+  },
+  "plugins": [
+    {
+      "name": "kid-compass",
+      "source": "./",
+      "description": "Find the right competitions, programmes and events for your child — with deadlines, growth paths and worth-it checks."
+    }
+  ]
+}

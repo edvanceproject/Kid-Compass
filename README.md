@@ -1,116 +1,215 @@
-# Kid Compass
+# kid-compass
 
-**Kid Compass** is a [Claude Skill](https://docs.claude.com/en/docs/claude-code/skills) that helps parents, guardians and teachers in India find the right competitions, olympiads, programmes, camps, workshops, exhibitions and events for a child — based on the child's interests, age, class, city, budget and schedule.
+**An open-source AI skill that helps parents find the right competitions, programmes, camps, workshops and exhibitions for their child — based on what the child actually loves — and never miss a deadline.**
 
-It turns what a parent knows about their child into an **opportunity map**: things to try this weekend, deadlines coming up this term, and a level-by-level growth path ("ladder") for each of the child's strongest interests.
+Built India-first: CBSE, ICSE and State boards, Indian national programmes, city packs. It works in any country through web search.
 
-## Why it exists
+> **You:** My daughter is 11, Class 6 CBSE, Bengaluru. She takes apart old gadgets and built a working lift out of cardboard. About ₹1,500 a month, weekends only. What should she try?
+>
+> **kid-compass:** builds an **opportunity map** —
+> - **Sparks:** *Builder* ("built a working lift out of cardboard") · *How-things-work investigator*
+> - **This month:** a science museum visit, a "Lift 2.0" home build, a planetarium sky-watch, a free children's literature festival
+> - **Coming deadlines:** CBSE Science Exhibition (school registers; *reported* 14 Nov) and Bebras India (free; school registers by 28 Nov, *confirmed*) — with a ready-to-send note to her class teacher
+> - **The ladder:** home builds → school fair → regional exhibition → INSPIRE-MANAK and NCSC → national, and the next rung for her
+> - **Missed it?** INSPIRE-MANAK closed 15 Sep 2026; the school nominates; next window ~Jul 2027 — start an idea notebook now
+> - **Balance check:** about ₹1,300–1,500 and 10–12 hours in November — right at your budget, and what to drop if it runs over
+> - A **calendar file** with reminders, a month ahead for school-route deadlines
+>
+> **See the full, real output → [examples/bengaluru-class6-builder.md](examples/bengaluru-class6-builder.md)**
 
-Parents usually find out about good opportunities by accident, often after the deadline — and many of the best national programmes in India run through schools rather than families. At the same time, parents are regularly sold expensive, low-value contests. Kid Compass acts as the well-informed, honest friend who keeps track of all of this, and who cares more about the child enjoying things than about medals.
+## Why
 
-It's India-first (CBSE/ICSE/State boards, national programmes, city packs) but works anywhere via web search.
+Every Indian parent has heard this one: *"There was a science congress / olympiad / art contest — we found out after the deadline."*
+
+- Good opportunities are scattered across government circulars, school notices and WhatsApp forwards.
+- Many of the best national programmes are entered **through the school**, so parents can't apply even when they find out.
+- Registration deadlines come months before the event.
+- Meanwhile, families get sold expensive contests where every child gets a "gold medal".
+
+kid-compass is the well-informed, honest friend who keeps track of all of it — and cares more about your child enjoying things than about medals.
 
 ## What it does
 
-Ask it things like:
+| | |
+|---|---|
+| **Spark interview** | 2 minutes of questions about what your child does when nobody is directing them — or a fun "this or that" game they play themselves |
+| **Opportunity map** | This weekend, coming deadlines, missed-it-plan-next-year, in one phone-sized page |
+| **The ladder** | A level-by-level path for each interest: school → district → state → national → international |
+| **Deadline radar** | Registration dates (not event dates), each marked *confirmed*, *reported* or *estimated* |
+| **School nudge** | A polite, specific note to the class teacher for school-route programmes — English, Hindi, Kannada |
+| **Worth-it check** | ⭐ Credible / ⚠️ Check first / 🚩 Pay-to-participate, with the facts behind the label |
+| **Balance guard** | Adds up hours and money, flags overload, keeps joy in the mix |
+| **Calendar reminders** | An `.ics` file with reminders — a month ahead for school-route programmes |
+| **Debrief loop** | Three questions after each event; the next recommendations get better |
 
-- "What should my child try? She's 11, class 6, in Bengaluru, loves building things."
-- "Is this competition my friend forwarded on WhatsApp actually worth it?"
-- "When's the deadline for INSPIRE Awards?"
-- "Help me write a note to the school about NCSC."
-- "She just did a robotics workshop, what's next?"
+## Install
 
-It responds with an honest, dated opportunity map:
+kid-compass is a standard [Agent Skill](https://agentskills.io) (a folder with a `SKILL.md`), so it works in any agent that supports skills. Pick one way:
 
-1. **Sparks** — a 2–4 line interest map, grounded in what the parent actually said.
-2. **This weekend / this month** — low-cost things nearby, including a free or ₹0–500 "taster" when one exists.
-3. **Coming deadlines** — the next 90 days, soonest first, with registration dates and the application route.
-4. **The ladder** — the path from school level to national (and beyond) for the child's top interests.
-5. **Missed it?** — anything whose window just closed, with the next expected cycle.
-6. **Balance check** — total hours/money per month, flagging overload and making sure there's joy as well as challenge.
-7. **Next steps** — at most three concrete actions for the week.
+### Quick install — any agent
 
-Every date carries a status — **confirmed** (checked on the official page), **reported** (news/third-party only) or **estimated** (projected from last year) — so parents never act on a guess dressed up as a fact.
-
-## How it's built
-
-```
-kid-compass/
-├── SKILL.md                     # the skill definition Claude reads
-├── references/                  # guidance Claude loads as needed
-│   ├── child-safety.md          # data, privacy and tone rules
-│   ├── spark-interview.md       # interview questions, "this or that" game, debrief
-│   ├── fit-and-worth-it.md      # fit labels, eligibility checks, worth-it checks
-│   ├── interest-ladders.md     # level-by-level paths per interest area
-│   ├── finding-local-events.md # search queries + verification for local events
-│   ├── output-format.md        # the opportunity map template and profile file format
-│   └── school-nudge.md          # notes to teachers, in English, Hindi, Kannada
-├── registry/                    # the community-maintained data
-│   ├── national/*.yaml          # verified national programmes, one per file
-│   ├── cities/*.yaml            # city packs of reputable venues
-│   └── SCHEMA.md                # registry file format
-└── scripts/
-    ├── find_matches.py          # filter the registry for a specific child
-    ├── upcoming.py               # list all deadlines in the next N days
-    ├── make_ics.py               # generate a calendar file with reminders
-    ├── validate_registry.py     # check registry files are well-formed
-    └── registry_lib.py           # shared loading/parsing helpers
-```
-
-### The registry
-
-The registry is the structured, verifiable core of the skill — one YAML file per national programme (eligibility, cost, application route, deadline windows, and whether each date is confirmed or just reported) plus a city pack per city of reputable venues that regularly run children's programmes. Every entry carries a `last_verified` date so stale information gets flagged rather than trusted blindly. See [`kid-compass/registry/SCHEMA.md`](kid-compass/registry/SCHEMA.md) for the full format.
-
-### The scripts
-
-The scripts need **Python 3.9+** and **PyYAML**:
+**macOS / Linux / WSL**
 
 ```bash
-pip install pyyaml
+curl -fsSL https://raw.githubusercontent.com/brainydarts/kid-compass/main/install.sh | bash
 ```
+
+**Windows (PowerShell)**
+
+```powershell
+irm https://raw.githubusercontent.com/brainydarts/kid-compass/main/install.ps1 | iex
+```
+
+This copies the skill into two folders, which together cover every major agent:
+
+| Folder | Read by |
+|---|---|
+| `~/.claude/skills/kid-compass` | Claude Code (and Cursor) |
+| `~/.agents/skills/kid-compass` | OpenAI Codex, Cursor, GitHub Copilot, Gemini CLI and other agents that follow the shared `.agents/skills` convention |
+
+Options: `--agent codex` (or `claude`, `cursor`, `copilot`, `gemini`, comma-separated), `--project` to install into the current project instead of your home folder, `--uninstall` to remove it. On Windows: `-Agent codex`, `-Project`, `-Uninstall`.
+
+### With the skills CLI (18+ agents)
 
 ```bash
-# Find programmes that fit a specific child
-python scripts/find_matches.py --interests science,engineering --class 6 --age 11 \
-    --board CBSE --max-cost 1500 --city bengaluru
-
-# List everything with a deadline in the next 90 days
-python scripts/upcoming.py --days 90 --interests science
-
-# Build a calendar file with 7-day and 1-day reminders
-python scripts/make_ics.py --ids inspire-manak,ncsc --out kid-compass-reminders.ics
-
-# Validate the registry after editing it
-python scripts/validate_registry.py --strict
+npx skills add brainydarts/kid-compass              # pick your agents interactively
+npx skills add brainydarts/kid-compass -g           # install for your user, across all projects
+npx skills add brainydarts/kid-compass -a cursor    # one agent: claude-code, codex, cursor, github-copilot, gemini-cli…
 ```
 
-Run any script with `--help` for the full list of options.
+### Claude Code (as a plugin)
 
-## Installing the skill
+```text
+/plugin install kid-compass --marketplace brainydarts/kid-compass
+```
 
-The packaged skill ships as [`kid-compass.skill`](kid-compass.skill) — a zip archive containing the `kid-compass/` folder above. Unzip it into your Claude Skills directory, or load it directly in a Claude Code / Claude.ai session that supports Skills:
+The one-step form needs Claude Code 2.1.275 or later. On older versions, use two steps: `/plugin marketplace add brainydarts/kid-compass`, then `/plugin install kid-compass@brainydarts`. Run `/plugin marketplace update` to get new registry entries.
+
+### Claude apps (claude.ai, desktop, mobile)
+
+Download **`kid-compass.skill`** from the [latest release](https://github.com/brainydarts/kid-compass/releases/latest) and upload it as a custom skill in your settings (see Anthropic's help centre on skills).
+
+### Agent-specific commands
+
+| Agent | Command |
+|---|---|
+| Gemini CLI | `gemini skills install https://github.com/brainydarts/kid-compass.git --path skills/kid-compass` (add `--scope workspace` for one project) |
+| OpenAI Codex | Ask Codex: *"use $skill-installer to install the skill at https://github.com/brainydarts/kid-compass/tree/main/skills/kid-compass"* — or quick install with `--agent codex` |
+| Cursor, GitHub Copilot | Quick install with `--agent cursor` / `--agent copilot`, or `npx skills add … -a cursor` |
+| Any other agent | Copy `skills/kid-compass` into the folder your agent loads skills from |
+
+### Manual install
 
 ```bash
-unzip kid-compass.skill
+git clone https://github.com/brainydarts/kid-compass.git
+cp -r kid-compass/skills/kid-compass ~/.claude/skills/     # Claude Code
+cp -r kid-compass/skills/kid-compass ~/.agents/skills/     # Codex, Cursor, Copilot, Gemini CLI
 ```
 
-Once installed, Claude will use it automatically whenever a parent, teacher or guardian asks what their child could take part in — even if they never use the word "competition".
+For a single project, copy it into `.claude/skills/` or `.agents/skills/` at the project root instead, and commit it so your whole team gets it.
 
-## Principles
+### Chat apps without skills support
 
-- **Joy first, then growth.** Recommend things the child is likely to enjoy; competitions are one tool among many, and fear of missing out is never used to push a family.
-- **Free and nearby before expensive and far.** Cost is always stated honestly, including travel.
-- **Verify, then recommend.** Dates older than a year, or that look off, are checked against the official source before being stated.
-- **Say what you don't know.** An unconfirmed date, eligibility rule or fee is labelled as such, with a link to check.
-- **Respect the family's choices.** "Fun only" stays fun; "serious preparation" gets a serious path.
-- **Child data stays minimal.** Only a nickname, age, class, board, city and interests are needed — never a full name, school name, photos, address or health information.
+Paste the contents of `skills/kid-compass/SKILL.md` into a custom-instructions or project-instructions box and attach the `references/` and `registry/` files as knowledge. You lose the helper scripts, but the guidance and the verified registry still work.
+
+### Optional: helper scripts
+
+The skill includes small Python scripts (matching, deadlines, calendar files). They need Python 3.9+ and PyYAML:
+
+```bash
+python3 -m pip install pyyaml
+```
+
+Without them the skill still works: the agent reads the registry files directly.
+
+### Check it works
+
+Restart your agent, then ask:
+
+> *"My son is in Class 4 in Pune and loves space — what can he take part in this year?"*
+
+You should get an opportunity map with "Sparks", deadlines marked confirmed / reported / estimated, and a ladder.
+
+## Try these
+
+- *"My 9-year-old in Hyderabad draws all the time. Any art competitions or workshops this winter?"*
+- *"Is the 'XYZ International Olympiad' worth ₹1,950 for my Class 3 son?"*
+- *"Which science programmes need the school to nominate, and when should I talk to the teacher?"*
+- *"Make me a calendar of every deadline for a Class 8 student who likes maths and coding."*
+- *"My 14-year-old is shy and hates competitions but loves comics. Ideas in Pune?"*
+
+## The registry
+
+The skill draws on a community-maintained registry of recurring programmes, each verified against the organiser's official page and stamped with the date it was checked.
+
+**13 national programmes** at launch:
+
+| Programme | Interests | Who | Applied via | Registration closes | Cost |
+|---|---|---|---|---|---|
+| [Bebras India Computational Thinking Challenge](https://www.bebras.in) | coding, maths | Class 3–12 | School | ~Nov | Free |
+| [CBSE Science Exhibition](https://academic.cbseit.in/science_ex) | science, maths, innovation | Class 6–11 (CBSE) | School | ~Nov | Free to families (school pays) |
+| [INSPIRE Awards – MANAK](https://inspireawards-dst.gov.in) | science, innovation, engineering | Class 6–12 | School | ~Sep | Free |
+| [IRIS National Fair](https://iris.exstemplar.com/) | science, engineering, innovation | Class 5–12 | Child/parent | ~Oct | ₹5,000 |
+| [ISRO YUVIKA – Young Scientist Programme](https://www.isro.gov.in/Young_Scientist_YUVIKA2026.html) | space, science, engineering | Class 9 | Child/parent | ~Mar | Free |
+| [Indian Olympiad Qualifier in Mathematics](https://ioqm.mtai.org.in/) | maths | Class 8–12 | School | ~Jul | ₹300 |
+| [National Children's Science Congress](https://n-csc.in/) | science, environment, innovation | Age 10–17 | School | ~Aug | Free |
+| [National Standard Examination in Junior Science](https://www.iapt.org.in/) | science | Class 8–10 | School | ~Sep | ₹300 |
+| [Pradhan Mantri Rashtriya Bal Puraskar](https://awards.gov.in) | all-round, social-impact, environment | Age 5–18 | Child/parent | ~Jul | Free |
+| [School Innovation Marathon](https://aim.gov.in/) | innovation, engineering, entrepreneurship | Class 6–12 | School | ~Oct | check |
+| [Shankar's International Children's Competition](https://childrensbooktrust.com/sicc.html) | art, writing | Under 16 | Parent | ~Oct | Free |
+| [TCS InQuizitive](https://www.tcs.com/inquizitive) | quiz, science, coding | Class 8–12 | School | varies | Free |
+| [World Robot Olympiad India](https://wroindia.org/season-2026/) | robotics, engineering, coding | Age 8–22 | Coach/club | varies | ₹20,000 per team (one category free) |
+
+City packs (reputable venues that regularly run children's programmes): **Bengaluru**. Your city next? See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Every date kid-compass shows carries one of three labels:
+
+- **confirmed** — checked on the organiser's official page
+- **reported** — found only in news or third-party pages; confirm before acting
+- **estimated** — projected from last year's cycle until someone confirms the new circular
+
+Refreshing a deadline when the new circular comes out is the single most useful contribution you can make.
+
+## Privacy and child safety
+
+- The **parent** is the user. kid-compass drafts; it never contacts, messages or registers anyone.
+- It asks only for a nickname, age, class, board, city and interests — never full name, school name, address or photos.
+- The optional profile file stays on your machine, holds only those fields, and is never put into web searches.
+- No ranking, labelling or comparing children. Competitions are presented as optional; "fun only" is a respected choice.
+- No ads, no affiliate links, no paid listings.
+
+Read the full rules in [`references/child-safety.md`](skills/kid-compass/references/child-safety.md).
+
+## Helper scripts
+
+```bash
+cd skills/kid-compass
+python scripts/find_matches.py --interests science,engineering --class 6 --age 11 --city bengaluru
+python scripts/upcoming.py --days 90 --class 8
+python scripts/make_ics.py --ids inspire-manak,ncsc --out reminders.ics
+python scripts/validate_registry.py
+```
 
 ## Contributing
 
-The registry is the part of Kid Compass meant to grow with community input — new national programmes, new city packs, corrected or re-verified dates. Add or edit a YAML file under `kid-compass/registry/`, following [`SCHEMA.md`](kid-compass/registry/SCHEMA.md), then run:
+The best way to help is to **add your city** or **refresh a deadline** when a new circular comes out. No coding needed for most contributions — see [CONTRIBUTING.md](CONTRIBUTING.md). Issues labelled `good first issue` are a good place to start.
 
-```bash
-python kid-compass/scripts/validate_registry.py --strict
-```
+## Roadmap
 
-before opening a pull request.
+- City packs for Mumbai, Delhi NCR, Pune, Chennai, Hyderabad, Kolkata
+- State-level programmes (state science councils, state board competitions)
+- Sports pathways and arts examinations
+- Spark interview in more Indian languages
+- WhatsApp deadline reminders
+
+## Disclaimer
+
+kid-compass is not affiliated with any programme or organiser it lists. Dates, fees and eligibility change; always confirm on the official link before applying.
+
+## Built by
+
+**Shashank Hegde** at **BrainyDarts Technologies**, Bengaluru — makers of Brainy Reminders (WhatsApp reminders for Indian families) and Brainy Sheets (practice worksheets for CBSE classes 1–10).
+
+If kid-compass helped your family, a ⭐ on GitHub helps other parents find it.
+
+MIT licensed.

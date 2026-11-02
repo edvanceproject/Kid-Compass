@@ -1,0 +1,36 @@
+id: wro-india
+name: World Robot Olympiad India (WRO India)
+organiser: India STEM Foundation; international body WRO Association
+interests: [robotics, engineering, coding, innovation]
+format: Team builds and programs robots for set challenges (RoboMission, RoboSports, Future Engineers) or builds a themed robot project (Future Innovators)
+level_path: [regional, national, international]
+eligibility:
+  class_min: null
+  class_max: null
+  age_min: 8
+  age_max: 22
+  age_as_of: null
+  boards: all
+  team: team
+  details: "Teams of 2–3 with an adult coach. Age groups: Elementary 8–12, Junior 11–15, Senior 14–19 (RoboMission, Future Innovators); RoboSports 11–19; Future Engineers 14–22"
+apply_via: coach
+cost_inr: 20000
+reward: Top national teams represent India at the WRO International Championship
+window:
+  opens_month: null
+  closes_month: null
+  last_seen_open: null
+  last_seen_close: null
+  event_months: Regionals and nationals Jul–Aug; international final in Nov–Dec
+  cycle: annual
+credibility: established
+official_url: https://wroindia.org/season-2026/
+source_urls:
+  - https://www.wroindia.org/
+  - https://wroindia.org/season-2026/
+  - https://wroindia.org/wro-faqs/
+last_verified: 2026-11-01
+notes: >-
+  ₹20,000 is per team for RoboMission, RoboSports and Future Engineers; Future Innovators is free for one team per school.
+  Registration dates aren't published and places are first-come, first-served — check early in the year (2026 nationals: 26–28 Aug, Hyderabad).
+  Usually entered through a school robotics club or a robotics academy acting as coach.

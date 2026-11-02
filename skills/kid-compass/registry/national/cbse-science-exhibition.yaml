@@ -1,0 +1,39 @@
+id: cbse-science-exhibition
+name: CBSE Science Exhibition (Regional and National)
+organiser: Central Board of Secondary Education (CBSE)
+interests: [science, maths, innovation, engineering, environment]
+format: Team of up to two students with a mentor science teacher builds and shows a STEM exhibit on a set sub-theme; regional winners go to the national exhibition
+level_path: [school, regional, national]
+eligibility:
+  class_min: 6
+  class_max: 11
+  age_min: null
+  age_max: null
+  age_as_of: null
+  boards: CBSE-affiliated schools only
+  boards_only: [CBSE]
+  team: either
+  details: "Category I: Classes 6–8; Category II: Classes 9–11"
+apply_via: school
+cost_inr: 0
+reward: Selection to the national exhibition; national winners may go on to NCERT's Rashtriya Bal Vaigyanik Pradarshani
+window:
+  opens_month: 10
+  closes_month: 11
+  last_seen_open: 2026-10-27
+  last_seen_close: 2026-11-14
+  last_seen_close_source: secondary   # from news reports; official page didn't state it
+  event_months: Regional Nov–Dec; national Jan
+  cycle: annual
+credibility: official
+official_url: https://academic.cbseit.in/science_ex
+source_urls:
+  - https://academic.cbseit.in/science_ex
+  - https://academic.cbseit.in/science_ex/Home/Circulars
+  - https://cbseacademic.nic.in/web_material/Circulars/2025/63_Circular_2025.pdf
+  - https://www.uniindia.com/north-india/cbse-national-science-exhibition/228985
+last_verified: 2026-11-01
+notes: >-
+  The school registers and pays (₹3,000 per school, covering up to 2 teams) — free for the family. 2026-27 dates
+  (27 Oct – 14 Nov 2026) come from news reports; the official circular Acad-69/2026 is listed on the portal but
+  couldn't be opened, so confirm there. In 2025-26 registration ran in September, so the month moves year to year.

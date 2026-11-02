@@ -1,0 +1,30 @@
+name: Report a problem
+description: Wrong date, broken link, a listing that shouldn't be there, or a response that felt pushy or unsafe
+title: "[Problem] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of problem
+      options:
+        - Wrong or outdated date / fee / eligibility
+        - Broken link
+        - Listing that shouldn't be in the registry
+        - Response felt pushy, unsafe or asked for too much personal data
+        - Script error
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Include the registry id or the part of the response. Please don't paste your child's name or personal details.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Correct source (if you have one)
+      placeholder: https://

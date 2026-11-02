@@ -1,0 +1,35 @@
+id: iris-national-fair
+name: IRIS National Fair (Initiative for Research and Innovation in STEM)
+organiser: EXSTEMPLAR Education Linkers Foundation (an affiliated fair of Society for Science's Regeneron ISEF)
+interests: [science, engineering, innovation, maths]
+format: Student does an original research or engineering project, submits it online; shortlisted students present at the national fair
+level_path: [national, international]
+eligibility:
+  class_min: 5
+  class_max: 12
+  age_min: null
+  age_max: null
+  age_as_of: null
+  boards: all schools in India
+  team: either
+  details: Individual or a team of exactly 2; applicants must be of Indian origin and living in India
+apply_via: self
+cost_inr: 5000
+reward: Top finalists represent India at Regeneron ISEF, with mentoring camps before it
+window:
+  opens_month: 8
+  closes_month: 10
+  last_seen_open: 2026-08-01
+  last_seen_close: 2026-10-13
+  event_months: null
+  cycle: annual
+credibility: established
+official_url: https://iris.exstemplar.com/
+source_urls:
+  - https://iris.exstemplar.com/
+  - https://register.irisnationalfair.org/
+last_verified: 2026-11-01
+notes: >-
+  Fee is ₹5,000 plus taxes per project, non-refundable; a fee waiver exists for economically weaker sections.
+  Best for older students with a real research project; months of work, so start well before August.
+  The official site gave conflicting dates for the 2026-27 fair (Nov 2026 vs Jan–Feb 2027).

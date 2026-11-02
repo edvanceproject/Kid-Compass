@@ -1,0 +1,37 @@
+id: shankars-international
+name: Shankar's International Children's Competition
+organiser: Children's Book Trust, New Delhi
+interests: [art, writing]
+format: Child posts an original, unaided painting or drawing, or emails/posts a piece of English writing (poem, story, essay, play); an international jury judges
+level_path: [international]
+eligibility:
+  class_min: null
+  class_max: null
+  age_min: null
+  age_max: 15
+  age_as_of: null
+  boards: all
+  team: individual
+  details: Under 16; paintings at least 30 x 40 cm, unframed; writing in English only; each entry needs a certificate of originality from a parent, guardian or teacher
+apply_via: parent
+cost_inr: 0
+reward: President of India's Gold Medal (best painting), Shankar's Award (best writing), Nehru Memorial gold medals, about 300 silver medals and prizes, and publication in Shankar's Children's Art Number
+window:
+  opens_month: null
+  closes_month: 10
+  closes_day: 31
+  last_seen_open: null
+  last_seen_close: null
+  event_months: Results around September of the following year
+  cycle: annual
+credibility: established
+official_url: https://childrensbooktrust.com/sicc.html
+source_urls:
+  - https://childrensbooktrust.com/sicc.html
+  - https://childrensbooktrust.com/about-sicc.html
+  - https://childrensbooktrust.com/downloads/Brochure.pdf
+last_verified: 2026-11-01
+notes: >-
+  Standing rule: Indian entries by 31 October. A 2026 cycle could not be confirmed (the rules page carries no year), so
+  check the site before sending. Schools can also send entries. Children's Book Trust also runs Shankar's On-the-Spot
+  Painting Competition in New Delhi each autumn (free, ages 5–17).

@@ -1,0 +1,35 @@
+id: bebras-india
+name: Bebras India Computational Thinking Challenge
+organiser: CSpathshala (ACM India)
+interests: [coding, maths]
+format: 45-minute online test of 15 logic and computational-thinking puzzles; no coding knowledge needed; available in 12 Indian languages
+level_path: [national]
+eligibility:
+  class_min: 3
+  class_max: 12
+  age_min: null
+  age_max: null
+  age_as_of: null
+  boards: all
+  team: individual
+  details: "Groups: Aryabhata (Std 3–4), Brahmagupta (5–6), Bhaskara (7–8), Mahavira (9–10), Ramanujam (11–12)"
+apply_via: school
+cost_inr: 0
+reward: Online certificate with national and state rank
+window:
+  opens_month: null
+  closes_month: 11
+  last_seen_open: null
+  last_seen_close: 2026-11-28
+  event_months: Mid-Nov to early Dec (2026 challenge window 16 Nov – 5 Dec)
+  cycle: annual
+credibility: established
+official_url: https://www.bebras.in
+source_urls:
+  - https://bebras.in
+  - https://www.bebras.in/register
+  - https://www.bebras.in/results
+last_verified: 2026-11-01
+notes: >-
+  A teacher registers the school and uploads students, who get their own logins; no parent route is listed — a good
+  case for a school nudge. About 2.5 lakh students took part in 2025. The 28 Nov date is the school registration deadline.

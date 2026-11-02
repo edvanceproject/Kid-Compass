@@ -1,0 +1,36 @@
+id: tcs-inquizitive
+name: TCS InQuizitive (successor to TCS IT Wiz)
+organiser: Tata Consultancy Services (TCS)
+interests: [quiz, science, coding]
+format: Two-student school team takes a written preliminary in their city, then an on-stage regional final; regional winners go to the national final in Mumbai
+level_path: [regional, national]
+eligibility:
+  class_min: 8
+  class_max: 12
+  age_min: null
+  age_max: null
+  age_as_of: null
+  boards: all
+  team: team
+  details: Both team members must be full-time students of the same school; home-schooled and distance students are excluded
+apply_via: school
+cost_inr: 0
+reward: Trophies, certificates, gift vouchers at regional and national levels
+window:
+  opens_month: null
+  closes_month: null
+  last_seen_open: null
+  last_seen_close: null
+  event_months: City rounds Jul–Nov; national final in Mumbai later
+  cycle: annual
+credibility: established
+official_url: https://www.tcs.com/inquizitive
+source_urls:
+  - https://www.tcs.com/inquizitive
+  - https://www.tcs.com/inquizitive/registration
+  - https://www.deccanchronicle.com/education/army-public-school-wins-the-hyderabad-edition-of-tcs-inquizitive-2026-1981000
+last_verified: 2026-11-01
+notes: >-
+  2026 ran in 12 cities (Ahmedabad, Bengaluru, Bhubaneswar, Chennai, Delhi, Hyderabad, Indore, Kochi, Kolkata, Mumbai,
+  Nagpur, Pune). Registration dates aren't published in advance — watch the page from June. TCS presents it as the
+  current form of the IT Wiz quiz tradition.

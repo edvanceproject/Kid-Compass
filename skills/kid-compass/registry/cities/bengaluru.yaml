@@ -1,0 +1,113 @@
+city: bengaluru
+last_verified: 2026-11-01
+sources:
+  - id: vitm
+    name: Visvesvaraya Industrial & Technological Museum (VITM)
+    type: science museum
+    interests: [science, engineering, innovation, space, quiz]
+    ages: null
+    look_for: Science demonstration shows, Taramandal and 3D shows, sky-observation programmes, popular science lectures, the annual Bengaluru district science quiz, children's galleries
+    cost: low
+    area: Kasturba Road, Cubbon Park
+    url: https://www.vismuseum.gov.in/
+    events_url: https://www.vismuseum.gov.in/upcoming-events.php
+    notes: Entry ₹100 per person above age 5 (official ticket page); shows charged separately. Events page sometimes doesn't load — call or visit if so.
+  - id: jawaharlal-nehru-planetarium
+    name: Jawaharlal Nehru Planetarium (BASE)
+    type: planetarium
+    interests: [space, science]
+    ages: null
+    look_for: Daily sky-theatre shows in English and Kannada, monthly first-Sunday sky-watching, weekend science sessions, holiday camps, REAP programme for students
+    cost: low
+    area: High Grounds, Sri T. Chowdiah Road
+    url: https://www.taralaya.org/
+    events_url: null
+    notes: Run by the Bangalore Association for Science Education. Programme details come from Karnataka Tourism listings; the official site couldn't be checked automatically and some listings give taralaya.karnataka.gov.in instead.
+  - id: science-gallery-bengaluru
+    name: Science Gallery Bengaluru
+    type: science museum
+    interests: [science, innovation, art, environment]
+    ages: 15+
+    look_for: Art-science exhibitions, student sessions for school groups, talks and workshops
+    cost: free
+    area: Sanjaynagar, Bellary Road
+    url: https://bengaluru.sciencegallery.com/
+    events_url: https://bengaluru.sciencegallery.com/events
+    notes: Aimed at ages 15–25; free entry, open Wednesday–Sunday. The events page looked out of date when checked — see the homepage for current exhibitions.
+  - id: jawahar-bal-bhavan
+    name: Jawahar Bal Bhavan, Bengaluru
+    type: cultural centre
+    interests: [art, music, dance, theatre, writing, science, all-round]
+    ages: 5–16
+    look_for: Summer camp (mid-April to mid-May, 19+ activities), weekend annual camp (August to January), Balashree and Kalashree selection camps
+    cost: null
+    area: Cubbon Park
+    url: https://jawaharbalbhavan.com/
+    events_url: https://jawaharbalbhavan.com/calender.php
+    notes: Under Karnataka's Department of Women & Child Development. Fees aren't on the official site.
+  - id: ranga-shankara
+    name: Ranga Shankara
+    type: theatre
+    interests: [theatre, music, writing, art]
+    ages: 20 months–16 years
+    look_for: AHA! Theatre for Children festival (July), AHA! Sunday family shows, Little Cloud storytelling for ages 4–6 (Jan–Feb weekends), summer workshops (Apr–May)
+    cost: paid
+    area: JP Nagar 2nd Phase
+    url: https://rangashankara.org/
+    events_url: https://rangashankara.org/aha/
+    notes: Tickets are sold through BookMyShow; summer workshops are listed for ages 8–12 on one official page.
+  - id: atta-galatta
+    name: Atta Galatta
+    type: library
+    interests: [reading, writing, art]
+    ages: null
+    look_for: Indian-language bookstore and events space with occasional children's storytelling and workshops
+    cost: varies
+    area: Indiranagar
+    url: https://attagalatta.com/
+    events_url: https://attagalatta.com/calendarpage.php
+    notes: No children's events were listed when checked on 1 Nov 2026 — check the calendar.
+  - id: bangalore-literature-festival
+    name: Bangalore Literature Festival (children's track C|L|F)
+    type: festival
+    interests: [reading, writing, quiz, science, art]
+    ages: 4+
+    look_for: Annual December festival with a children's track in three age bands (4+, 8+, 12+) — storytelling, magic, quizzes, comics, STEM and nature talks
+    cost: free
+    area: Freedom Park (2025 venue)
+    url: https://bangaloreliteraturefestival.org/
+    events_url: null
+    notes: 2026 edition announced for 11–13 Dec with free registration; the 2026 children's programme hadn't been published when checked.
+  - id: map-bengaluru
+    name: Museum of Art & Photography (MAP)
+    type: art gallery
+    interests: [art, theatre, reading]
+    ages: null
+    look_for: Family Days with workshops, puppetry, Yakshagana, storytelling and scavenger hunts; kids' guided walks and workshops
+    cost: varies
+    area: Kasturba Road
+    url: https://map-india.org/
+    events_url: https://map-india.org/learn/kids-families/
+    notes: Exhibitions are free on Tuesdays (official site). Workshop fees and ages vary by event.
+  - id: champaca
+    name: Champaca Bookstore & Children's Library
+    type: library
+    interests: [reading, writing]
+    ages: up to 12
+    look_for: Children's lending library, read-aloud workshops and children's book events
+    cost: varies
+    area: Vasanth Nagar
+    url: https://champaca.in/
+    events_url: https://champaca.in/blogs/events
+    notes: Library membership has a one-time ₹500 registration and a 6-month minimum (official site).
+  - id: early-bird-ncf
+    name: Early Bird (Nature Conservation Foundation)
+    type: nature group
+    interests: [environment, science]
+    ages: null
+    look_for: Children's bird walks, young birders' workshops, bird education materials
+    cost: varies
+    area: null
+    url: https://www.early-bird.in/
+    events_url: null
+    notes: Walk dates are announced on their social media and WhatsApp; the website's walk listings were not current when checked.

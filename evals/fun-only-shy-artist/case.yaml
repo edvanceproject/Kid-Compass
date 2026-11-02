@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: fun-only-shy-artist
+expected_outcome: |
+  Respects 'nothing competitive': suggests non-competitive art and comics opportunities (workshops, clubs, zine or comic fests, library or museum programmes) in or near Pune, avoids stage-based activities, and doesn't push competitions.
