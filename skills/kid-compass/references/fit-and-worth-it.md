@@ -53,6 +53,10 @@ Positive signs:
 - Free or low cost, or fees that clearly fund the event.
 - A path to a recognised higher level (state, national, international selection).
 
+### Large commercial school olympiads
+
+Parents often ask about the big, long-running olympiads that schools run as in-school exams for a fee (for example those by SOF, Unified Council or Silverzone). Judge them as what they are: established practice exams with school, regional and national ranks, usually at a modest fee paid through the school. Say plainly that they are **not** part of the official olympiad pathway run by HBCSE (IOQM → RMO/INMO → IMO; NSEJS → INJSO → IJSO), whatever "International" in the name suggests. Label them ⭐ Credible or ⚠️ Check first on the usual signs (fee, how many levels charge, whether the school is already running them), and suggest doing them only if the school already runs them and the child enjoys them.
+
 ### Checking a contest the parent only has a forward or flyer for
 
 Parents often ask about a contest they saw in a WhatsApp forward, a school flyer or an Instagram ad. Check it before judging:

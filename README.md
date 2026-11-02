@@ -51,13 +51,13 @@ kid-compass is a standard [Agent Skill](https://agentskills.io) (a folder with a
 **macOS / Linux / WSL**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/brainydarts/kid-compass/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/edvanceproject/Kid-Compass/main/install.sh | bash
 ```
 
 **Windows (PowerShell)**
 
 ```powershell
-irm https://raw.githubusercontent.com/brainydarts/kid-compass/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/edvanceproject/Kid-Compass/main/install.ps1 | iex
 ```
 
 This copies the skill into two folders, which together cover every major agent:
@@ -72,36 +72,36 @@ Options: `--agent codex` (or `claude`, `cursor`, `copilot`, `gemini`, comma-sepa
 ### With the skills CLI (18+ agents)
 
 ```bash
-npx skills add brainydarts/kid-compass              # pick your agents interactively
-npx skills add brainydarts/kid-compass -g           # install for your user, across all projects
-npx skills add brainydarts/kid-compass -a cursor    # one agent: claude-code, codex, cursor, github-copilot, gemini-cli…
+npx skills add edvanceproject/Kid-Compass              # pick your agents interactively
+npx skills add edvanceproject/Kid-Compass -g           # install for your user, across all projects
+npx skills add edvanceproject/Kid-Compass -a cursor    # one agent: claude-code, codex, cursor, github-copilot, gemini-cli…
 ```
 
 ### Claude Code (as a plugin)
 
 ```text
-/plugin install kid-compass --marketplace brainydarts/kid-compass
+/plugin install kid-compass --marketplace edvanceproject/Kid-Compass
 ```
 
-The one-step form needs Claude Code 2.1.275 or later. On older versions, use two steps: `/plugin marketplace add brainydarts/kid-compass`, then `/plugin install kid-compass@brainydarts`. Run `/plugin marketplace update` to get new registry entries.
+The one-step form needs Claude Code 2.1.275 or later. On older versions, use two steps: `/plugin marketplace add edvanceproject/Kid-Compass`, then `/plugin install kid-compass@brainydarts`. Run `/plugin marketplace update` to get new registry entries.
 
 ### Claude apps (claude.ai, desktop, mobile)
 
-Download **`kid-compass.skill`** from the [latest release](https://github.com/brainydarts/kid-compass/releases/latest) and upload it as a custom skill in your settings (see Anthropic's help centre on skills).
+Download **`kid-compass.skill`** from the [latest release](https://github.com/edvanceproject/Kid-Compass/releases/latest) and upload it as a custom skill in your settings (see Anthropic's help centre on skills).
 
 ### Agent-specific commands
 
 | Agent | Command |
 |---|---|
-| Gemini CLI | `gemini skills install https://github.com/brainydarts/kid-compass.git --path skills/kid-compass` (add `--scope workspace` for one project) |
-| OpenAI Codex | Ask Codex: *"use $skill-installer to install the skill at https://github.com/brainydarts/kid-compass/tree/main/skills/kid-compass"* — or quick install with `--agent codex` |
+| Gemini CLI | `gemini skills install https://github.com/edvanceproject/Kid-Compass.git --path skills/kid-compass` (add `--scope workspace` for one project) |
+| OpenAI Codex | Ask Codex: *"use $skill-installer to install the skill at https://github.com/edvanceproject/Kid-Compass/tree/main/skills/kid-compass"* — or quick install with `--agent codex` |
 | Cursor, GitHub Copilot | Quick install with `--agent cursor` / `--agent copilot`, or `npx skills add … -a cursor` |
 | Any other agent | Copy `skills/kid-compass` into the folder your agent loads skills from |
 
 ### Manual install
 
 ```bash
-git clone https://github.com/brainydarts/kid-compass.git
+git clone https://github.com/edvanceproject/Kid-Compass.git
 cp -r kid-compass/skills/kid-compass ~/.claude/skills/     # Claude Code
 cp -r kid-compass/skills/kid-compass ~/.agents/skills/     # Codex, Cursor, Copilot, Gemini CLI
 ```
@@ -176,7 +176,7 @@ Refreshing a deadline when the new circular comes out is the single most useful 
 - It asks only for a nickname, age, class, board, city and interests — never full name, school name, address or photos.
 - The optional profile file stays on your machine, holds only those fields, and is never put into web searches.
 - No ranking, labelling or comparing children. Competitions are presented as optional; "fun only" is a respected choice.
-- No ads, no affiliate links, no paid listings.
+- No ads, no affiliate links, no paid listings. Where it genuinely helps, kid-compass suggests two tools from BrainyDarts, the team that built it — Brainy Reminders (WhatsApp reminders) and BrainyWorkbook (CBSE practice) — always labelled as ours and always next to free options. The rules are public in [`references/brainydarts-tools.md`](skills/kid-compass/references/brainydarts-tools.md).
 
 Read the full rules in [`references/child-safety.md`](skills/kid-compass/references/child-safety.md).
 
@@ -208,7 +208,11 @@ kid-compass is not affiliated with any programme or organiser it lists. Dates, f
 
 ## Built by
 
-**Shashank Hegde** at **BrainyDarts Technologies**, Bengaluru — makers of Brainy Reminders (WhatsApp reminders for Indian families) and Brainy Sheets (practice worksheets for CBSE classes 1–10).
+**Shashank Hegde** at **BrainyDarts Technologies**, Bengaluru — makers of:
+
+- **[Brainy Reminders](https://wa.me/918618397641?text=Hi)** — reminders on WhatsApp, no app needed. Say hi at +91 86183 97641.
+- **[BrainyWorkbook](https://workbook.brainydarts.com)** — CBSE practice tests, with a progress view for parents.
+- **Brainy Sheets** — practice worksheets for CBSE Classes 1–10.
 
 If kid-compass helped your family, a ⭐ on GitHub helps other parents find it.
 

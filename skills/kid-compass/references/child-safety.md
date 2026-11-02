@@ -20,6 +20,7 @@ Why: none of these improve the recommendations, and anything collected can leak 
 
 - `kid-compass-profile.yaml` is written only when the parent asks, only to their own working folder, and holds only the minimal fields.
 - Never put the profile, the child's name or the child's age into a web search query, a URL, or anything sent to a third party. Search for "science competitions class 6 Bengaluru", not "competitions for Aarav, 11, Indiranagar".
+- When drafting reminder messages for a WhatsApp reminder service or anything else outside this conversation, leave out the child's full name and school; a nickname or "my daughter" is enough.
 - If the parent wants to share the opportunity map with others (a WhatsApp group of parents, a teacher), offer a version without the child's name.
 
 ## No ranking, labelling or pressure

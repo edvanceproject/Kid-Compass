@@ -6,13 +6,13 @@
 #   ~/.agents/skills/kid-compass   → Codex, Cursor, GitHub Copilot, Gemini CLI and other agents
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/brainydarts/kid-compass/main/install.sh | bash
-#   curl -fsSL https://raw.githubusercontent.com/brainydarts/kid-compass/main/install.sh | bash -s -- --agent codex
+#   curl -fsSL https://raw.githubusercontent.com/edvanceproject/Kid-Compass/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/edvanceproject/Kid-Compass/main/install.sh | bash -s -- --agent codex
 #   ./install.sh --project            # install into the current project instead of your home folder
 #   ./install.sh --uninstall          # remove it again
 set -euo pipefail
 
-REPO="${KID_COMPASS_REPO:-brainydarts/kid-compass}"
+REPO="${KID_COMPASS_REPO:-edvanceproject/Kid-Compass}"
 REF="${KID_COMPASS_REF:-main}"
 SKILL="kid-compass"
 SCOPE="global"

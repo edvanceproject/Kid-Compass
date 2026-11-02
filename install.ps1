@@ -5,7 +5,7 @@
 #   %USERPROFILE%\.agents\skills\kid-compass   -> Codex, Cursor, GitHub Copilot, Gemini CLI and other agents
 #
 # Usage:
-#   irm https://raw.githubusercontent.com/brainydarts/kid-compass/main/install.ps1 | iex
+#   irm https://raw.githubusercontent.com/edvanceproject/Kid-Compass/main/install.ps1 | iex
 #   .\install.ps1 -Agent codex
 #   .\install.ps1 -Project
 #   .\install.ps1 -Uninstall
@@ -16,7 +16,7 @@ param(
   [switch]$Uninstall
 )
 $ErrorActionPreference = "Stop"
-$Repo  = if ($env:KID_COMPASS_REPO) { $env:KID_COMPASS_REPO } else { "brainydarts/kid-compass" }
+$Repo  = if ($env:KID_COMPASS_REPO) { $env:KID_COMPASS_REPO } else { "edvanceproject/Kid-Compass" }
 $Skill = "kid-compass"
 $Base  = if ($Project) { (Get-Location).Path } else { $HOME }
 
